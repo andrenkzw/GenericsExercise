@@ -17,6 +17,19 @@ static class Program
     }
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.WriteLine(1.Equals(1));
+        Console.WriteLine(1.Equals<int>(1));
+        Console.WriteLine(1.Equals(2));
+        Console.WriteLine(1.Equals<int>(2));
+
+        Console.WriteLine((1.0).Equals(1.0));
+        Console.WriteLine((1.0).Equals<double>(1.0));
+        Console.WriteLine((1.0).Equals(2.0));
+        Console.WriteLine((1.0).Equals<double>(2.0));
+
+        Console.WriteLine("1".Equals("1"));
+        Console.WriteLine("1".Equals<string>("1"));
+        Console.WriteLine("1".Equals("2"));
+        Console.WriteLine("1".Equals<string>("2"));
     }
 }
