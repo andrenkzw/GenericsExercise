@@ -13,7 +13,7 @@ static class Program
         {
             return y == null;
         }
-        return x.Equals(y);
+        return EqualityComparer<T>.Default.Equals(x, y);
     }
     static void Main(string[] args)
     {
